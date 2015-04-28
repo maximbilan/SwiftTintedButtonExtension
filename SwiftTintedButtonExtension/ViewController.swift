@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+	@IBOutlet weak var button: UIButton!
+		
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
+		
+		self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
+		self.button.setImageTintColor(UIColor.blueColor(), state: .Highlighted)
 	}
 
 	override func didReceiveMemoryWarning() {
