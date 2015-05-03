@@ -11,6 +11,7 @@ Cocoapods:
 pod SwiftTintedButtonExtension
 </pre>
 Manual:</br>
+
 Copy <i>SwiftTintedButtonExtension.swift</i> to your project.
 
 <h5>How to use:</h5>
