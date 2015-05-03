@@ -4,3 +4,15 @@ A small <i>Swift</i> extension for tinting <i>UIButton</i>, like a <i>UIBarButto
 
 For example:
 ![alt tag](https://raw.github.com/maximbilan/SwiftTintedButtonExtension/master/img/4.png)
+
+<h5>How to install:</h5>
+Cocoapods:
+<pre>
+pod SwiftTintedButtonExtension
+</pre>
+Manual:
+Copy SwiftTintedButtonExtension.swift to your project.
+
+<h5>How to use:</h5>
+<pre>
+</pre>
