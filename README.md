@@ -10,11 +10,11 @@ Cocoapods:
 <pre>
 pod SwiftTintedButtonExtension
 </pre>
-Manual:
-Copy SwiftTintedButtonExtension.swift to your project.
+Manual:</br>
+Copy <i>SwiftTintedButtonExtension.swift</i> to your project.
 
 <h5>How to use:</h5>
 <pre>
 self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
-		self.button.setImageTintColor(UIColor.blueColor(), state: .Highlighted)
+self.button.setImageTintColor(UIColor.blueColor(), state: .Highlighted)
 </pre>
