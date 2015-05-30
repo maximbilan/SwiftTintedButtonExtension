@@ -1,4 +1,4 @@
-<h4>Swift Tinted Button Extension</h4>
+## Swift Tinted Button Extension
 
 [![Version](https://img.shields.io/cocoapods/v/SwiftTintedButtonExtension.svg?style=flat)](http://cocoadocs.org/docsets/SwiftTintedButtonExtension)
 [![License](https://img.shields.io/cocoapods/l/SwiftTintedButtonExtension.svg?style=flat)](http://cocoadocs.org/docsets/SwiftTintedButtonExtension)
@@ -15,9 +15,9 @@ Cocoapods:
 pod SwiftTintedButtonExtension
 </pre>
 Manual:</br>
-
+<pre>
 Copy <i>SwiftTintedButtonExtension.swift</i> to your project.
-
+</pre>
 ## How to use:
 <pre>
 self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
