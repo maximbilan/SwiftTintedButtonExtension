@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-extension UIButton {
+public extension UIButton {
 	
 	public func setImageTintColor(color: UIColor, state: UIControlState) {
 		let image = self.imageForState(state)
