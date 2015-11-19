@@ -12,7 +12,7 @@ For example:
 ## How to install
 Cocoapods:
 <pre>
-pod SwiftTintedButtonExtension
+pod 'SwiftTintedButtonExtension'
 </pre>
 Manual:</br>
 <pre>
