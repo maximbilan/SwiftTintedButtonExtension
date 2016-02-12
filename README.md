@@ -10,7 +10,7 @@ For example:
 ![alt tag](https://raw.github.com/maximbilan/SwiftTintedButtonExtension/master/img/4.png)
 
 ## How to install
-Cocoapods:
+CocoaPods:
 <pre>
 pod 'SwiftTintedButtonExtension'
 </pre>
