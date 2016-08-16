@@ -9,7 +9,7 @@ Based on <a href="https://github.com/filipstefansson/UITintedButton">this</a>.
 
 ![alt tag](https://raw.github.com/maximbilan/SwiftTintedButtonExtension/master/img/4.png)
 
-## How to install
+## Installation
 <b>CocoaPods:</b>
 <pre>
 pod 'SwiftTintedButtonExtension'
@@ -18,7 +18,7 @@ pod 'SwiftTintedButtonExtension'
 <pre>
 Copy <i>SwiftTintedButtonExtension.swift</i> to your project.
 </pre>
-## How to use
+## Using
 <pre>
 self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
 self.button.setImageTintColor(UIColor.blueColor(), state: .Highlighted)
