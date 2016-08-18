@@ -16,8 +16,8 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view, typically from a nib.
 		
-		self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
-		self.button.setImageTintColor(UIColor.blueColor(), state: .Highlighted)
+		self.button.setImageTintColor(color: UIColor.yellow, state: .normal)
+		self.button.setImageTintColor(color: UIColor.blue, state: .highlighted)
 	}
 
 	override func didReceiveMemoryWarning() {
