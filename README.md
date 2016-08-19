@@ -18,6 +18,9 @@ pod 'SwiftTintedButtonExtension'
 <pre>
 Copy <i>SwiftTintedButtonExtension.swift</i> to your project.
 </pre>
+
+<b>For running in Xcode 8 Beta please use <i>swift-3.0</i> branch.</b>
+
 ## Using
 <pre>
 self.button.setImageTintColor(UIColor.yellowColor(), state: .Normal)
