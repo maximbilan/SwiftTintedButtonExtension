@@ -10,21 +10,21 @@ import UIKit
 
 public extension UIButton {
 	
-	public func setImageTintColor(color: UIColor, state: UIControlState) {
+	public func setImageTintColor(_ color: UIColor, state: UIControlState) {
 		let image = self.image(for: state)
 		if image != nil {
-			self.setImage(self.tintedImageWithColor(tintColor: color, image: image!), for: state)
+			self.setImage(self.tintedImageWithColor(color, image: image!), for: state)
 		}
 	}
 	
-	public func setBackgroundTintColor(color: UIColor, state: UIControlState) {
+	public func setBackgroundTintColor(_ color: UIColor, state: UIControlState) {
 		let backgroundImage = self.backgroundImage(for: state)
 		if backgroundImage != nil {
-			self.setBackgroundImage(self.tintedImageWithColor(tintColor: color, image: backgroundImage!), for: state)
+			self.setBackgroundImage(self.tintedImageWithColor(color, image: backgroundImage!), for: state)
 		}
 	}
 	
-	private func tintedImageWithColor(tintColor: UIColor, image: UIImage) -> UIImage {
+	fileprivate func tintedImageWithColor(_ tintColor: UIColor, image: UIImage) -> UIImage {
 		
 		UIGraphicsBeginImageContextWithOptions(image.size, false, UIScreen.main.scale)
 		
@@ -35,7 +35,7 @@ public extension UIButton {
 		let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
 		
 		context!.setBlendMode(CGBlendMode.normal)
-		context!.draw(in: rect, image: image.cgImage!)
+		context!.draw(image.cgImage!, in: rect)
 		
 		context!.setBlendMode(CGBlendMode.sourceIn)
 		tintColor.setFill()
