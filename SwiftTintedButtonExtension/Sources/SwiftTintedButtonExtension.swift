@@ -6,45 +6,45 @@
 //  Copyright (c) 2015 Maxim Bilan. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
 public extension UIButton {
 	
-	public func setImageTintColor(color: UIColor, state: UIControlState) {
-		let image = self.imageForState(state)
+	public func setImageTintColor(_ color: UIColor, state: UIControlState) {
+		let image = self.image(for: state)
 		if image != nil {
-			self.setImage(self.tintedImageWithColor(color, image: image!), forState: state)
+			self.setImage(self.tintedImageWithColor(color, image: image!), for: state)
 		}
 	}
 	
-	public func setBackgroundTintColor(color: UIColor, state: UIControlState) {
-		let backgroundImage = self.backgroundImageForState(state)
+	public func setBackgroundTintColor(_ color: UIColor, state: UIControlState) {
+		let backgroundImage = self.backgroundImage(for: state)
 		if backgroundImage != nil {
-			self.setBackgroundImage(self.tintedImageWithColor(color, image: backgroundImage!), forState: state)
+			self.setBackgroundImage(self.tintedImageWithColor(color, image: backgroundImage!), for: state)
 		}
 	}
 	
-	private func tintedImageWithColor(tintColor: UIColor, image: UIImage) -> UIImage {
+	fileprivate func tintedImageWithColor(_ tintColor: UIColor, image: UIImage) -> UIImage {
 		
-		UIGraphicsBeginImageContextWithOptions(image.size, false, UIScreen.mainScreen().scale)
+		UIGraphicsBeginImageContextWithOptions(image.size, false, UIScreen.main.scale)
 		
 		let context = UIGraphicsGetCurrentContext()
-		CGContextTranslateCTM(context, 0, image.size.height)
-		CGContextScaleCTM(context, 1.0, -1.0)
+		context!.translateBy(x: 0, y: image.size.height)
+		context!.scaleBy(x: 1.0, y: -1.0)
 		
-		let rect = CGRectMake(0, 0, image.size.width, image.size.height)
+		let rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height)
 		
-		CGContextSetBlendMode(context, CGBlendMode.Normal)
-		CGContextDrawImage(context, rect, image.CGImage)
+		context!.setBlendMode(CGBlendMode.normal)
+		context!.draw(image.cgImage!, in: rect)
 		
-		CGContextSetBlendMode(context, CGBlendMode.SourceIn)
+		context!.setBlendMode(CGBlendMode.sourceIn)
 		tintColor.setFill()
-		CGContextFillRect(context, rect)
+		context!.fill(rect)
 		
 		let coloredImage = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
-		return coloredImage
+		return coloredImage!
 	}
+	
 }
