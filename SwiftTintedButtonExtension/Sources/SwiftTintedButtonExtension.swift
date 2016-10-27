@@ -30,21 +30,21 @@ public extension UIButton {
 		UIGraphicsBeginImageContextWithOptions(image.size, false, UIScreen.mainScreen().scale)
 		
 		let context = UIGraphicsGetCurrentContext()
-		CGContextTranslateCTM(context, 0, image.size.height)
-		CGContextScaleCTM(context, 1.0, -1.0)
+		CGContextTranslateCTM(context!, 0, image.size.height)
+		CGContextScaleCTM(context!, 1.0, -1.0)
 		
 		let rect = CGRectMake(0, 0, image.size.width, image.size.height)
 		
-		CGContextSetBlendMode(context, CGBlendMode.Normal)
-		CGContextDrawImage(context, rect, image.CGImage)
+		CGContextSetBlendMode(context!, CGBlendMode.Normal)
+		CGContextDrawImage(context!, rect, image.CGImage!)
 		
-		CGContextSetBlendMode(context, CGBlendMode.SourceIn)
+		CGContextSetBlendMode(context!, CGBlendMode.SourceIn)
 		tintColor.setFill()
-		CGContextFillRect(context, rect)
+		CGContextFillRect(context!, rect)
 		
 		let coloredImage = UIGraphicsGetImageFromCurrentImageContext()
 		UIGraphicsEndImageContext()
 		
-		return coloredImage
+		return coloredImage!
 	}
 }
