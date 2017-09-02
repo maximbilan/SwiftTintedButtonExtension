@@ -12,14 +12,11 @@ Based on <a href="https://github.com/filipstefansson/UITintedButton">this</a>.
 ## Installation
 <b>CocoaPods:</b>
 <pre>
-Swift 2.2:
-pod 'SwiftTintedButtonExtension', '~> 0.2.2'
-
-Swift 2.3:
-pod 'SwiftTintedButtonExtension', '~> 0.2.3'
-
-Swift 3.0:
+<b>Swift 3.0</b>:
 pod 'SwiftTintedButtonExtension', '~> 0.3.0'
+
+<b>Swift 4.0</b>:
+pod 'SwiftTintedButtonExtension', '~> 0.4.0'
 </pre>
 <b>Manual:</b></br>
 <pre>
