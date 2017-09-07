@@ -13,7 +13,7 @@ Based on <a href="https://github.com/filipstefansson/UITintedButton">this</a>.
 <b>CocoaPods:</b>
 <pre>
 <b>Swift 3.0</b>:
-pod 'SwiftTintedButtonExtension', '~> 0.3.0'
+pod 'SwiftTintedButtonExtension', '0.3.0'
 
 <b>Swift 4.0</b>:
 pod 'SwiftTintedButtonExtension', '~> 0.4.0'
