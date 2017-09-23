@@ -3,6 +3,8 @@
 [![Version](https://img.shields.io/cocoapods/v/SwiftTintedButtonExtension.svg?style=flat)](http://cocoadocs.org/docsets/SwiftTintedButtonExtension)
 [![License](https://img.shields.io/cocoapods/l/SwiftTintedButtonExtension.svg?style=flat)](http://cocoadocs.org/docsets/SwiftTintedButtonExtension)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftTintedButtonExtension.svg?style=flat)](http://cocoadocs.org/docsets/SwiftTintedButtonExtension)
+[![CocoaPods](https://img.shields.io/cocoapods/dt/SwiftTintedButtonExtension.svg)](https://cocoapods.org/pods/SwiftTintedButtonExtension)
+[![CocoaPods](https://img.shields.io/cocoapods/dm/SwiftTintedButtonExtension.svg)](https://cocoapods.org/pods/SwiftTintedButtonExtension)
 
 A small <i>Swift</i> extension for tinting <i>UIButton</i>, like a <i>UIBarButtonItem</i> or a <i>UINavigationItem</i>.<br>
 Based on <a href="https://github.com/filipstefansson/UITintedButton">this</a>.
