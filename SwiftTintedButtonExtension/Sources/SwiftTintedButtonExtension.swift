@@ -10,14 +10,14 @@ import UIKit
 
 public extension UIButton {
 	
-	public func setImageTintColor(_ color: UIColor, state: UIControlState) {
+	public func setImageTintColor(_ color: UIColor, state: UIControl.State) {
 		let image = self.image(for: state)
 		if image != nil {
 			self.setImage(self.tintedImageWithColor(color, image: image!), for: state)
 		}
 	}
 	
-	public func setBackgroundTintColor(_ color: UIColor, state: UIControlState) {
+	public func setBackgroundTintColor(_ color: UIColor, state: UIControl.State) {
 		let backgroundImage = self.backgroundImage(for: state)
 		if backgroundImage != nil {
 			self.setBackgroundImage(self.tintedImageWithColor(color, image: backgroundImage!), for: state)
